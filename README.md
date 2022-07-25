@@ -1,6 +1,7 @@
 # KDE with i3 for Plasma 5.25+
 
-This script creates a new xsession entry which boots KDE Plasma with the i3 window manager.
+This script creates a new xsession entry which boots KDE Plasma with the i3 window manager. \
+Works with Plasma's Systemd boot, which become the default option in Plasma 5.25
 
 ## Installation
 - Install KDE Plasma and i3

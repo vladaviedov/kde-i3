@@ -44,7 +44,7 @@ then
 	fi
 
 	# Copy normal config
-	if [ cp $I3/config $I3/config-kde ]
+	if cp $I3/config $I3/config-kde
 	then
 		echo "~/.config/i3/config copied"
 	else
@@ -54,6 +54,10 @@ then
 fi
 
 # Install service
+if [ ! -d $SYSTEMD_USER ]
+then
+	mkdir -p $SYSTEMD_USER
+fi
 cp files/plasma-i3.service $SYSTEMD_USER
 sed -i "/ExecStart/ s/HOME/$ESC_HOME/" $SYSTEMD_USER/plasma-i3.service
 

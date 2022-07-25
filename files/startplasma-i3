@@ -3,4 +3,5 @@ export XDG_CURRENT_DESKTOP=KDE
 /usr/bin/systemctl mask plasma-kwin_x11 --user
 /usr/bin/systemctl start plasma-i3 --user
 /usr/bin/startplasma-x11
+/usr/bin/systemctl stop plasma-i3 --user
 /usr/bin/systemctl unmask plasma-kwin_x11 --user

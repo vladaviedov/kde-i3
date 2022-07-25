@@ -1,0 +1,10 @@
+[Unit]
+Description=Plasma with i3
+Before=plasma-workspace.target
+
+[Service]
+ExecStart=/usr/bin/i3 -c HOME/.config/i3/config-kde
+Restart=on-failure
+
+[Install]
+WantedBy=plasma-workspace.target

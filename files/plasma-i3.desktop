@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/local/bin/startplasma-i3
+TryExec=/usr/local/bin/startplasma-i3
+DesktopNames=KDE
+Name=i3 with Plasma (X11)
+Comment=Plasma with i3
+X-KDE-PluginInfo-Version=5.25.3
